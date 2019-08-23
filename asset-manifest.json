@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/FCC-Drum-Machine/static/css/main.661760e2.chunk.css",
+    "main.js": "/FCC-Drum-Machine/static/js/main.0bb3e89b.chunk.js",
+    "main.js.map": "/FCC-Drum-Machine/static/js/main.0bb3e89b.chunk.js.map",
+    "runtime~main.js": "/FCC-Drum-Machine/static/js/runtime~main.874bd421.js",
+    "runtime~main.js.map": "/FCC-Drum-Machine/static/js/runtime~main.874bd421.js.map",
+    "static/js/2.6a98ba04.chunk.js": "/FCC-Drum-Machine/static/js/2.6a98ba04.chunk.js",
+    "static/js/2.6a98ba04.chunk.js.map": "/FCC-Drum-Machine/static/js/2.6a98ba04.chunk.js.map",
+    "index.html": "/FCC-Drum-Machine/index.html",
+    "precache-manifest.09a260d234de20a7218654055841a89b.js": "/FCC-Drum-Machine/precache-manifest.09a260d234de20a7218654055841a89b.js",
+    "service-worker.js": "/FCC-Drum-Machine/service-worker.js",
+    "static/css/main.661760e2.chunk.css.map": "/FCC-Drum-Machine/static/css/main.661760e2.chunk.css.map",
+    "static/media/boom.wav": "/FCC-Drum-Machine/static/media/boom.550be808.wav",
+    "static/media/clap.wav": "/FCC-Drum-Machine/static/media/clap.a6e86dd7.wav",
+    "static/media/hihat.wav": "/FCC-Drum-Machine/static/media/hihat.4ba39e07.wav",
+    "static/media/kick.wav": "/FCC-Drum-Machine/static/media/kick.4dd58595.wav",
+    "static/media/openhat.wav": "/FCC-Drum-Machine/static/media/openhat.a62db465.wav",
+    "static/media/ride.wav": "/FCC-Drum-Machine/static/media/ride.b0d70ec5.wav",
+    "static/media/snare.wav": "/FCC-Drum-Machine/static/media/snare.80c4129b.wav",
+    "static/media/tink.wav": "/FCC-Drum-Machine/static/media/tink.2a6bb6f5.wav",
+    "static/media/tom.wav": "/FCC-Drum-Machine/static/media/tom.572ed39d.wav"
+  }
+}
