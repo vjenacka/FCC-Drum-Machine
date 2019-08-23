@@ -9,22 +9,37 @@ const Wrapper = styled.div`
 `;
 
 export class DrumPad extends Component {
-  audio = new Audio(this.props.src);
-
-  togglePlay = () => {
-    this.audio.currentTime=0;
-    this.audio.play()
+  componentDidMount() {
+    window.addEventListener("keydown", this.handleKeyDown);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this.handleKeyDown);
+  }
+  togglePlay = e => {
+    const audio = e.target.lastChild;
+    audio.currentTime = 0;
+    audio.play();
+    this.props.renderCurrentNote(this.props.note.text);
   };
-
+  handleKeyDown = e => {
+    const { note } = this.props;
+    if (e.key.toUpperCase() === note.drum) {
+      const audio = document.getElementById(`${note.drum}`);
+      audio.currentTime = 0;
+      audio.play();
+      this.props.renderCurrentNote(note.text);
+    }
+  };
   render() {
+    const { note } = this.props;
     return (
       <Wrapper
         className="drum-pad"
-        id={`drum-${this.props.drum}`}
+        id={`drum-${note.drum}`}
         onClick={this.togglePlay}
       >
-        <span>{this.props.drum}</span>
-        <audio className="clip" src={this.props.src} id={this.props.drum} />
+        {note.drum}
+        <audio className="clip" src={note.src} id={note.drum} />
       </Wrapper>
     );
   }

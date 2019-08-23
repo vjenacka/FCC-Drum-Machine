@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PadContainer from "./PadContainer";
 import Display from "./Display";
 import styled from "styled-components";
@@ -13,11 +13,11 @@ const Wrapper = styled.div`
   border: 4px solid #c62828;
 `;
 
-const DrumMachine = ({keyCode}) => {
+const DrumMachine = ({notes,currentNote,renderCurrentNote}) => {
   return (
     <Wrapper id="drum-machine">
-      <PadContainer keyCode={keyCode}/>
-      <Display />
+      <PadContainer notes={notes} renderCurrentNote={renderCurrentNote}/>
+      <Display currentNote={currentNote}/>
     </Wrapper>
   );
 };
